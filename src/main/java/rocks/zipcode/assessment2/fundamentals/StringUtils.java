@@ -29,12 +29,11 @@ public class StringUtils {
     public static String padRight(String stringToBePadded, int amountOfPadding) {
 
         String right = "";
-
+        right += stringToBePadded;
         for (int i = 0; i < amountOfPadding - stringToBePadded.length(); i++){
             right += " ";
         }
 
-        right += stringToBePadded;
         return right;
     }
 

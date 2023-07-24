@@ -1,5 +1,9 @@
 package rocks.zipcode.assessment2.arrays;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * @author leon on 28/11/2018.
  */
@@ -29,9 +33,10 @@ public class IntegerArrayUtils {
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
+        List<Integer> list = new ArrayList<>(Arrays.asList(integerArray));
+        list.set(indexToInsertAt, valueToBeInserted);
 
-
-        return null;
+        return list.toArray(new Integer[0]);
     }
 
     /**
