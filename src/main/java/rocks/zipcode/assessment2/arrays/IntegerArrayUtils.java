@@ -10,7 +10,16 @@ public class IntegerArrayUtils {
      * @return - identical array with one additional element of `valueToBeAdded` at the end of the array
      */
     public static Integer[] add(Integer[] integerArray, Integer valueToBeAdded) {
-        return null;
+
+        Integer[] sum = new Integer[integerArray.length + 1];
+
+
+        for (int i = 0; i < integerArray.length; i++){
+            sum[i] = integerArray[i];
+
+        }
+        sum[sum.length - 1] = valueToBeAdded;
+        return sum;
     }
 
     /**
@@ -20,6 +29,8 @@ public class IntegerArrayUtils {
      * @return `integerArray` with `valueToBeInserted` at index number `indexToInsertAt`
      */
     public static Integer[] replace(Integer[] integerArray, int indexToInsertAt, Integer valueToBeInserted) {
+
+
         return null;
     }
 
@@ -29,7 +40,7 @@ public class IntegerArrayUtils {
      * @return element located at `indexToFetch`
      */
     public static Integer get(Integer[] integerArray, Integer indexToFetch) {
-        return null;
+        return integerArray[indexToFetch];
     }
 
     /**

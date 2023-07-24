@@ -12,7 +12,7 @@ public class Address {
     private String zipcode;
 
     public Address() {
-
+        this.state = "Delaware";
     }
 
     /**

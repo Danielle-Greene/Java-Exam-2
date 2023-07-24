@@ -10,7 +10,15 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by left-padding
      */
     public static String padLeft(String stringToBePadded, int amountOfPadding) {
-        return null;
+
+        String left = "";
+
+        for (int i = 0; i < amountOfPadding - stringToBePadded.length(); i++){
+            left += " ";
+        }
+
+        left += stringToBePadded;
+        return left;
     }
 
     /**
@@ -19,7 +27,15 @@ public class StringUtils {
      * @return `stringToBePadded` flushed right by right-padding
      */
     public static String padRight(String stringToBePadded, int amountOfPadding) {
-        return null;
+
+        String right = "";
+
+        for (int i = 0; i < amountOfPadding - stringToBePadded.length(); i++){
+            right += " ";
+        }
+
+        right += stringToBePadded;
+        return right;
     }
 
     /**
@@ -28,14 +44,25 @@ public class StringUtils {
      * @return the string repeated and concatenated `n` times
      */
     public static String repeatString(String stringToBeRepeated, int numberOfTimeToRepeat) {
-        return null;
+
+        StringBuilder repeat = new StringBuilder();
+        for (int i = 0; i < numberOfTimeToRepeat; i++) {
+            repeat.append(stringToBeRepeated);
+        }
+
+    String string = repeat.toString();
+        return string;
     }
+
 
     /**
      * @param string - string to be evaluated
      * @return - true if string only contains alpha characters
      */
     public static Boolean isAlphaString(String string) {
+        //int i = 0;
+        //for (i = 0; i < string.length(); i++)
+            //if char.isletter(string.charAt(i));
         return null;
     }
 
